@@ -33,6 +33,8 @@ endif()
 message(STATUS "Using module to find Vulkan")
 
 # Find Vulkan Path using CMake's Vulkan Module
+# It is mandatory since we need both the headers and SDK
+# Reference to the instalation guide if needed
 find_package(Vulkan REQUIRED)
 
 IF (NOT Vulkan_FOUND)

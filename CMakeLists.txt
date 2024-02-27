@@ -59,6 +59,6 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(glm)
 
 # Include Vulkan as a targeted lib
-target_link_libraries(${PROJECT_NAME} PUBLIC Vulkan::Vulkan)
+target_link_libraries(${PROJECT_NAME} PUBLIC Vulkan::Vulkan glfw glm)
 
 
